@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Zapfino';
-    src: url('/Zapfino.ttf') format('truetype');
+    src: url('fonts/Zapfino.ttf') format('truetype');
   }
   
   body {
