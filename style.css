@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Zapfino';
+    src: url('/Zapfino.ttf') format('truetype');
+  }
+  
+  body {
+    font-family: 'MyCustomFont', sans-serif;
+  }
+
 body{
     background-color:rgb(45, 70, 119);
 }
@@ -11,7 +20,7 @@ body{
 }
 
 .Subtitle{
-    font-family: 'Zapfino';
+    font-family: 'Zapfino', sans-serif;
     color: white;
     margin-top:-0.7em;
     font-size: 280%;
@@ -63,6 +72,7 @@ body{
     text-align: center;
     margin-top: -0.05em;
     position: static;
+    height: 100vh;
 }
 
 .definitionButton{
@@ -85,9 +95,9 @@ button:hover{
 .BGLogo img {
     position: fixed;
     left: 20%;
-    bottom: 5%;
+    bottom: 0%;
     width: 100vh;
-    z-index: 1;
+    z-index: -1;
   }
 
 .autoProgressContainer {
@@ -97,6 +107,7 @@ button:hover{
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
 }
 
 .autoProgressButton {
@@ -111,6 +122,7 @@ button:hover{
     direction: rtl;
     position: relative;
     display: block;
+    z-index: 1;
 }
 
 .slider::-webkit-slider-runnable-track {
@@ -121,6 +133,7 @@ button:hover{
     top: 18px;
     left: 10%;
     transform: translateY(-50%);
+    z-index: 1;
 }
 
 .slider::-webkit-slider-thumb {
