@@ -95,7 +95,7 @@ body{
     height: 100vh;
     width: 100vw;
     color: rgba(255, 255, 255, 0.485);
-    background-color: white;
+    background-color: transparent;
     border: none;
     z-index: 1;
   }
