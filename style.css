@@ -29,13 +29,14 @@ body{
 }
 
 .dropdown-container {
-    position: relative;
+    position: fixed;
+    top:10px;
     z-index: 1;
   }
   
   .dropdown {
     position: fixed;
-    top: 20%;
+    top: 155px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
@@ -91,34 +92,37 @@ body{
   }
   
   .pinyinbutton {
-    height: 150vh;
+    position: fixed;
+    top:-1880px;
+    height: 3000px;
     width: 100vw;
     color: rgba(255, 255, 255, 0.485);
     background-color: transparent;
     border: none;
-    transform: translateX(-1%);
     z-index: 1;
-    bottom:0px
+    transform: translateX(-0.59%) translateY(20.5%);
   }
 
   .definitionButton,
   .nextButton {
-    height: 150vh;
-    width: 100vw;
+    position: fixed;
+    top:-258px;
+    height: 1500px;
+    width: 150vw;
     color: rgba(255, 255, 255, 0.485);
     background-color: transparent;
     border: none;
-    transform: translateX(-1%);
     z-index: 1;
+    transform: translateX(-33.5%);
   }
 
-.BGLogo img {
+  .BGLogo img {
     position: fixed;
-    left: 20%;
-    bottom: 0%;
-    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: -100;
-  }
+    }
 
 .autoProgressContainer {
     text-align: center;
