@@ -13,8 +13,8 @@ body{
 .Subtitle{
     font-family: 'Zapfino';
     color: white;
-    margin-top:-1em;
-    font-size: 180%;
+    margin-top:-0.7em;
+    font-size: 280%;
     text-align:center;  
     text-decoration: none
 }
@@ -85,8 +85,9 @@ button:hover{
 .BGLogo img {
     position: fixed;
     left: 20%;
-top: 5%;
-z-index: 1;
+    bottom: 5%;
+    width: 100vh;
+    z-index: 1;
   }
 
 .autoProgressContainer {
