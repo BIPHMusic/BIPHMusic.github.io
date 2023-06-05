@@ -28,11 +28,19 @@ body{
     text-decoration: none
 }
 
-.dropdown{
-    text-align:center;
-    margin-top:-3.5em;
-    opacity: 1;
-}
+.dropdown-container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .dropdown {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    text-align: center;
+  }
 
 .term{   
     background-color: rgba(15, 22, 33, 0.844);
@@ -45,6 +53,7 @@ body{
     font-size: 400%;
     color: white;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    z-index: -1;
 }
 
 .pinyin{   
@@ -52,9 +61,11 @@ body{
     text-align:center;
     font-size: 200%;
     margin-top:-2em;
-    width:100%;
+    width:90%;
+    transform: translateX(5%);    
     font-family: 'Arial', sans-serif;
     color:white;
+    z-index: -1;
 }
 
 .english{   
@@ -63,29 +74,31 @@ body{
     font-size: 100%;
     margin-top:-1.75em;
     margin-bottom: 0%;
-    width:100%;
+    width:90%;
+    transform: translateX(5%);    
     font-family: 'Andika', sans-serif;
     color:white;
+    z-index: -1;
 }
 
-.pinyinButton{
-    text-align: center;
-    margin-top: -0.05em;
-    position: static;
+.button-container {
+    position: fixed;
+    text-align:center;
+    margin-top:-28em;
+    width: 100%;
+    z-index: 0;
+  }
+  
+  .pinyinbutton,
+  .definitionButton,
+  .nextButton {
     height: 100vh;
-}
-
-.definitionButton{
-    text-align: center;
-    margin-top: -0.05em;
-    position: static;
-}
-
-.nextButton{
-    text-align: center;
-    margin-top: -0.05em;
-    position: static;
-} 
+    width: 100vw;
+    color: rgba(255, 255, 255, 0.485);
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+  }
 
 button:hover{
     transform: scale(1.1);
@@ -96,8 +109,8 @@ button:hover{
     position: fixed;
     left: 20%;
     bottom: 0%;
-    width: 100vh;
-    z-index: -1;
+    height: 100vh;
+    z-index: -100;
   }
 
 .autoProgressContainer {
@@ -141,3 +154,5 @@ button:hover{
     z-index: 1;
     top: -5px;
 }
+
+

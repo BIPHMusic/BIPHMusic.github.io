@@ -12,8 +12,9 @@
         <h1 class="Title">BIPH Music</h1>
         <h1 class="Subtitle">Vocabulary Review</h1>
  
-        <div class="dropdown">
-            <select name="vocab" onChange="getVocab()">
+        <div class="dropdown-container">
+            <div class="dropdown">
+              <select name="vocab" onChange="getVocab()">
                 <option value="Cumulative" selected>Cumulative</option>
                 <option value="Unit1">Unit1</option>
                 <option value="Unit2">Unit2</option>
@@ -21,32 +22,35 @@
                 <option value="Unit4">Unit4</option>
                 <option value="Unit5">Unit5</option>
                 <option value="Unit6">Unit6</option>
-            </select>
+              </select>
+            </div>
+          </div>
+
+        <div>
+            <h3 class="term"></h3>
         </div>
 
         <div>
-            <h3 class="term">Term</h3>
+            <h3 class="pinyin"></h3>
         </div>
 
         <div>
-            <h3 class="pinyin">Pinyin</h3>
+            <h3 class="english"></h3>
         </div>
 
-        <div>
-            <h3 class="english">Definition</h3>
-        </div>
-
-<div class="pinyinButton">
-    <button class="pinyinbutton">Show pinyin</button>
-</div>
-
-<div class="definitionButton">
-    <button class="definitionButton">Show definition</button>
-</div>
-
-<div class="nextButton">
-    <button class="nextButton">Next word</button>
-</div>
+        <div class="button-container">
+            <div class="pinyinButton">
+              <button class="pinyinbutton">Click anywhere to Reveal the Chinese Translation</button>
+            </div>
+          
+            <div class="definitionButton">
+              <button class="definitionButton">Click anywhere to Reveal the Definition</button>
+            </div>
+          
+            <div class="nextButton">
+              <button class="nextButton">Click anywhere to Go to the next word</button>
+            </div>
+          </div>
 
 <div class="BGLogo">
     <img src="https://i.postimg.cc/FKjG7zKB/BG-5percent.png" alt="Background logo">

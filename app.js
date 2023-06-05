@@ -283,7 +283,7 @@ var cumulative = [
         }
     }
 
-    getVocab()
+getVocab()
 
 let listlength = Object.keys(vocab).length;
 let theword = Math.floor(Math.random() * listlength);
@@ -292,13 +292,13 @@ let theword = Math.floor(Math.random() * listlength);
 const term = document.querySelector('.term');
 const pinyin = document.querySelector('.pinyin');
 const english = document.querySelector('.english');
-const pinyinButton = document.querySelector('.pinyinButton');
-const definitionButton = document.querySelector('.definitionButton');
-const nextButton = document.querySelector('.nextButton');
+const pinyinButton = document.querySelector('.button-container .pinyinbutton');
+const definitionButton = document.querySelector('.button-container .definitionButton');
+const nextButton = document.querySelector('.button-container .nextButton');
 
 function getRandomWord() {
-    let listlength = Object.keys(vocab).length;
-    let theword = Math.floor(Math.random() * listlength);
+    listlength = Object.keys(vocab).length;
+    theword = Math.floor(Math.random() * listlength);
     term.innerHTML = `<h3>${vocab[theword].English}</h3>`;
     pinyin.innerHTML = `<h3>${vocab[theword].Chinese}</h3>`;
     english.innerHTML = `<h3>${vocab[theword].Definition}</h3>`;
