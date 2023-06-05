@@ -87,23 +87,30 @@ body{
     margin-top:-28em;
     width: 100%;
     z-index: 0;
+    bottom:0px
   }
   
-  .pinyinbutton,
-  .definitionButton,
-  .nextButton {
-    height: 100vh;
+  .pinyinbutton {
+    height: 150vh;
     width: 100vw;
     color: rgba(255, 255, 255, 0.485);
     background-color: transparent;
     border: none;
+    transform: translateX(-1%);
     z-index: 1;
+    bottom:0px
   }
 
-button:hover{
-    transform: scale(1.1);
-    transition: 0.2s;
-}
+  .definitionButton,
+  .nextButton {
+    height: 150vh;
+    width: 100vw;
+    color: rgba(255, 255, 255, 0.485);
+    background-color: transparent;
+    border: none;
+    transform: translateX(-1%);
+    z-index: 1;
+  }
 
 .BGLogo img {
     position: fixed;
