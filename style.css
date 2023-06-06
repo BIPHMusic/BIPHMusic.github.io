@@ -49,7 +49,6 @@ body{
     text-align:center;
     font-size: 100%;
     margin-top:5em;
-    margin-bottom: -4.6%;
     width:90%;
     transform: translateX(5%);    
     font-family: 'Andika', sans-serif;
@@ -58,11 +57,13 @@ body{
 }
 
 .pinyin{   
-    border-radius: 10px;
+    position: fixed;
+    left: -5.5%;
+    width: 100%;
     text-align:center;
+    margin-top:-50px;
+    border-radius: 10px;
     font-size: 200%;
-    margin-bottom: -4.6%;
-    width:90%;
     transform: translateX(5%);    
     font-family: 'Arial', sans-serif;
     color:white;
@@ -70,12 +71,11 @@ body{
 }
 
 .term-container{   
-    background-color: rgb(15, 22, 33);
+    position: fixed;
+    margin-top:48px;
+    left: 10%;
+    background-color: rgba(15, 22, 33, 0.441);
     border-radius: 10px;
-    margin-top:0em;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:center;
     width:80%;
     font-family: 'Andika', sans-serif;
     font-size: 500%;
@@ -84,14 +84,14 @@ body{
 }
 
 .term{   
-    background-color: rgb(15, 22, 33);
-    border-radius: 10px;
-    margin:auto;
-    margin-top:-2.69em;
+    position: fixed;
+    margin-top:20px;
+    left: 10%;
     text-align:center;
     width:80%;
+    height:92px;
     font-family: 'Andika', sans-serif;
-    font-size: 400%;
+    font-size:250%;
     color: white;
     z-index: -1;
 }
