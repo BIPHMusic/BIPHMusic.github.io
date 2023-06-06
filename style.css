@@ -8,13 +8,15 @@ body{
     background-color:rgb(45, 70, 119);
 }
 
-.Title{
+.Title {
     font-family: sans-serif;
     color: white;
     font-size: 200%;
-    text-align:center;  
-    text-decoration: none
-}
+    text-align: center;
+    text-decoration: none;
+    min-width: fit-content;
+    white-space: nowrap;
+  }
 
 .Subtitle{
     font-family: 'Zapfino', sans-serif;
@@ -22,7 +24,9 @@ body{
     margin-top:-0.7em;
     font-size: 280%;
     text-align:center;  
-    text-decoration: none
+    text-decoration: none;
+    min-width: fit-content;
+    white-space: nowrap;
 }
 
 .dropdown-container {
@@ -176,5 +180,3 @@ body{
     z-index: 1;
     top: -5px;
 }
-
-
