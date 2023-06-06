@@ -2,10 +2,7 @@
     font-family: 'Zapfino';
     src: url('fonts/Zapfino.ttf') format('truetype');
   }
-  
-  body {
-    font-family: 'MyCustomFont', sans-serif;
-  }
+
 
 body{
     background-color:rgb(45, 70, 119);
@@ -43,17 +40,16 @@ body{
     text-align: center;
   }
 
-.term{   
-    background-color: rgba(15, 22, 33, 0.844);
-    border-radius: 10px;
-    margin:auto;
-    margin-top:-0.5em;
+  .english{   
+    border: solid 0px white;
     text-align:center;
-    width:80%;
+    font-size: 100%;
+    margin-top:5em;
+    margin-bottom: 5%;
+    width:90%;
+    transform: translateX(5%);    
     font-family: 'Andika', sans-serif;
-    font-size: 400%;
-    color: white;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    color:white;
     z-index: -1;
 }
 
@@ -61,7 +57,8 @@ body{
     border-radius: 10px;
     text-align:center;
     font-size: 200%;
-    margin-top:-2em;
+    margin-top:-1em;
+    margin-bottom: -5%;
     width:90%;
     transform: translateX(5%);    
     font-family: 'Arial', sans-serif;
@@ -69,16 +66,30 @@ body{
     z-index: -1;
 }
 
-.english{   
-    border: solid 0px white;
+.term-container{   
+    background-color: rgb(15, 22, 33);
+    border-radius: 10px;
+    margin-top:0em;
+    margin-left: auto;
+    margin-right: auto;
     text-align:center;
-    font-size: 100%;
-    margin-top:-1.75em;
-    margin-bottom: 0%;
-    width:90%;
-    transform: translateX(5%);    
+    width:80%;
     font-family: 'Andika', sans-serif;
-    color:white;
+    font-size: 500%;
+    color: rgba(225, 226, 227, 0);
+    z-index: -2;
+}
+
+.term{   
+    background-color: rgb(15, 22, 33);
+    border-radius: 10px;
+    margin:auto;
+    margin-top:-2.69em;
+    text-align:center;
+    width:80%;
+    font-family: 'Andika', sans-serif;
+    font-size: 400%;
+    color: white;
     z-index: -1;
 }
 

@@ -302,8 +302,8 @@ function getRandomWord() {
     term.innerHTML = `<h3>${vocab[theword].English}</h3>`;
     pinyin.innerHTML = `<h3>${vocab[theword].Chinese}</h3>`;
     english.innerHTML = `<h3>${vocab[theword].Definition}</h3>`;
+    term.style.visibility='hidden';
     pinyin.style.visibility='hidden';
-    english.style.visibility='hidden';
     pinyinButton.style.display = 'block'; 
     definitionButton.style.display='none';
     nextButton.style.display='none';
@@ -316,7 +316,7 @@ pinyinButton.addEventListener('click', () => {
 })
  
 definitionButton.addEventListener('click', () => {
-    english.style.visibility = 'visible';
+    term.style.visibility = 'visible';
     definitionButton.style.display='none'
     nextButton.style.display='block';
 })
@@ -326,6 +326,7 @@ nextButton.addEventListener('click', () => {
     english.style.visibility = 'hidden';
     nextButton.style.display='none';
     pinyinButton.style.display = 'block';  
+    english.style.visibility = 'visible';
     getRandomWord();
 });
 
