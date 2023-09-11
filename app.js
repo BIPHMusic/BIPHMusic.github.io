@@ -3,9 +3,6 @@ var vocab;
 var cumulative = [
     {"Term":"Dictation","Definition":"To write down a given melody or harmony"},
     {"Term":"Interval","Definition":"The distance between two notes"},
-    {"Term":"Transcribe/Transcription","Definition":"To write down a melody or passage as it was performed, to dicatate"},
-    {"Term":"Octave","Definition":"The space of 8 notes"},
-    {"Term":"Unison","Definition":"Two notes at the same pitch level"},
     {"Term":"Diatonic","Definition":"Chords or notes that fall within the scale"},
     {"Term":"Tonic","Definition":"I, do-mi-sol"},
     {"Term":"Supertonic","Definition":"ii, re-fa-la"},
@@ -26,7 +23,12 @@ var cumulative = [
     {"Term":"Major 6","Definition":"Nine half steps between the pitches, “NBC,” “Not At All”"},
     {"Term":"Minor 7","Definition":"Ten half steps between the pitches, “Winnie the Pooh”"},
     {"Term":"Major 7","Definition":"Eleven half steps between the pitches, “Pure Imagination”"},
-    {"Term":"Perfect Octave","Definition":"Twelve half steps between the pitches"},
+    {"Term":"Perfect Octave","Definition":"Twelve half steps between the pitches, space of 8 notes"},
+    {"Term":"Harmony","Definition":"The general concept that describes the way notes sound together"},
+    {"Term":"Intonation","Definition":"The act of being in tune"},
+    {"Term":"Dissonant","Definition":"A sound of clashing produced by conflicting notes"},
+    {"Term":"Consonant","Definition":"The opposite of dissonance, pleasant sounds"},
+    {"Term":"Chord","Definition":"Multiple notes sounded simultaneously, triads, etc."},
 ];
 
 var intervals = [
