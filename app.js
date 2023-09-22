@@ -29,9 +29,35 @@ var cumulative = [
     {"Term":"Dissonant","Definition":"A sound of clashing produced by conflicting notes"},
     {"Term":"Consonant","Definition":"The opposite of dissonance, pleasant sounds"},
     {"Term":"Chord","Definition":"Multiple notes sounded simultaneously, triads, etc."},
+    {"Term":"Staff","Definition":"The five lines you write music on"},
+{"Term":"Ledger Lines","Definition":"Short lines written above and below the staff"},
+{"Term":"Treble Clef","Definition":"G clef, the symbol representing the upper register"},
+{"Term":"Bass Clef","Definition":"F clef, the symbol representing the lower register"},
+{"Term":"Accidental","Definition":"markings in the music that alter the pitch of a note"},
+{"Term":"Improvisation","Definition":"Come up with new melodies, solos, etc. on the spot"},
+{"Term":"Chromatic Scale","Definition":"A scale utilizing all 12 notes"},
+{"Term":"Whole Tone Scale","Definition":"A scale comprised only of whole steps"},
+{"Term":"Pentatonic Scale","Definition":"A scale only using 5 notes, major or minor"},
+{"Term":"Octatonic Scale","Definition":"A scale using 8 notes, diminished scales"},
+{"Term":"Sharp","Definition":"Raises a natural pitch by one half step"},
+{"Term":"Flat","Definition":"Lowers a natural pitch by one half step"},
+{"Term":"Double Sharp","Definition":"Raises a natural pitch by two half steps"},
+{"Term":"Double Flat","Definition":"Lowers a natural pitch by two half steps"},
+{"Term":"Natural","Definition":"Returns a note to it’s natural state, canceling any accidentals"},
+{"Term":"Enharmonic","Definition":"An alternate spelling of a note (i.e. C#/Db)"},
 ];
 
-var intervals = [
+var unit1 = [
+    {"Term":"Dictation","Definition":"To write down a given melody or harmony"},
+    {"Term":"Interval","Definition":"The distance between two notes"},
+    {"Term":"Diatonic","Definition":"Chords or notes that fall within the scale"},
+    {"Term":"Tonic","Definition":"I, do-mi-sol"},
+    {"Term":"Supertonic","Definition":"ii, re-fa-la"},
+    {"Term":"Mediant","Definition":"iii, mi-sol-xi"},
+    {"Term":"Subdominant","Definition":"IV, fa-la-do"},
+    {"Term":"Dominant","Definition":"V, sol-xi-re"},
+    {"Term":"Submediant","Definition":"vi, la-do-mi"},
+    {"Term":"Leading Tone","Definition":"viiº, xi-re-fa"},
     {"Term":"Perfect Unison","Definition":"No distance between the pitches; the same note"},
     {"Term":"Minor 2","Definition":"One half step between the pitches, “Jaws”"},
     {"Term":"Major 2","Definition":"Two half steps between the pitches, “Do-re”"},
@@ -44,25 +70,39 @@ var intervals = [
     {"Term":"Major 6","Definition":"Nine half steps between the pitches, “NBC,” “Not At All”"},
     {"Term":"Minor 7","Definition":"Ten half steps between the pitches, “Winnie the Pooh”"},
     {"Term":"Major 7","Definition":"Eleven half steps between the pitches, “Pure Imagination”"},
-    {"Term":"Perfect Octave","Definition":"Twelve half steps between the pitches"},
+    {"Term":"Perfect Octave","Definition":"Twelve half steps between the pitches, space of 8 notes"},
+    {"Term":"Harmony","Definition":"The general concept that describes the way notes sound together"},
+    {"Term":"Intonation","Definition":"The act of being in tune"},
+    {"Term":"Dissonant","Definition":"A sound of clashing produced by conflicting notes"},
+    {"Term":"Consonant","Definition":"The opposite of dissonance, pleasant sounds"},
+    {"Term":"Chord","Definition":"Multiple notes sounded simultaneously, triads, etc."},
 ];
-var DiatonicChordTerms = [
-    {"Term":"Tonic","Definition":"I, do-mi-sol"},
-    {"Term":"Supertonic","Definition":"ii, re-fa-la"},
-    {"Term":"Mediant","Definition":"iii, mi-sol-xi"},
-    {"Term":"Subdominant","Definition":"IV, fa-la-do"},
-    {"Term":"Dominant","Definition":"V, sol-xi-re"},
-    {"Term":"Submediant","Definition":"vi, la-do-mi"},
-    {"Term":"Leading Tone","Definition":"viiº, xi-re-fa"},
+var unit2 = [
+    {"Term":"Staff","Definition":"The five lines you write music on"},
+{"Term":"Ledger Lines","Definition":"Short lines written above and below the staff"},
+{"Term":"Treble Clef","Definition":"G clef, the symbol representing the upper register"},
+{"Term":"Bass Clef","Definition":"F clef, the symbol representing the lower register"},
+{"Term":"Accidental","Definition":"markings in the music that alter the pitch of a note"},
+{"Term":"Improvisation","Definition":"Come up with new melodies, solos, etc. on the spot"},
+{"Term":"Chromatic Scale","Definition":"A scale utilizing all 12 notes"},
+{"Term":"Whole Tone Scale","Definition":"A scale comprised only of whole steps"},
+{"Term":"Pentatonic Scale","Definition":"A scale only using 5 notes, major or minor"},
+{"Term":"Octatonic Scale","Definition":"A scale using 8 notes, diminished scales"},
+{"Term":"Sharp","Definition":"Raises a natural pitch by one half step"},
+{"Term":"Flat","Definition":"Lowers a natural pitch by one half step"},
+{"Term":"Double Sharp","Definition":"Raises a natural pitch by two half steps"},
+{"Term":"Double Flat","Definition":"Lowers a natural pitch by two half steps"},
+{"Term":"Natural","Definition":"Returns a note to it’s natural state, canceling any accidentals"},
+{"Term":"Enharmonic","Definition":"An alternate spelling of a note (i.e. C#/Db)"},
 ];
 
     function getVocab() {
         let vocabSelect = document.querySelector('select');
-        if (vocabSelect.value == 'Intervals') {
-            vocab = intervals;
+        if (vocabSelect.value == 'Unit1') {
+            vocab = unit1;
             getRandomWord()
-        } else if (vocabSelect.value == 'Diatonic Chord Terms') {
-            vocab = DiatonicChordTerms;
+        } else if (vocabSelect.value == 'Unit2') {
+            vocab = unit2;
             getRandomWord()
         } else if (vocabSelect.value == 'Cumulative') {
             vocab = cumulative;
