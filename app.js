@@ -45,6 +45,14 @@ var cumulative = [
 {"Term":"Double Flat","Definition":"Lowers a natural pitch by two half steps"},
 {"Term":"Natural","Definition":"Returns a note to it’s natural state, canceling any accidentals"},
 {"Term":"Enharmonic","Definition":"An alternate spelling of a note (i.e. C#/Db)"},
+{"Term":"Key","Definition":"The scale used in a piece of music"},
+{"Term":"Key Signature","Definition":"The set of sharps and flats which determine the key"},
+{"Term":"Solfege","Definition":"Do, Re, Mi, etc."},
+{"Term":"Scale","Definition":"The notes of a given key, ascending and descending"},
+{"Term":"Major Scale","Definition":"1, 2, 3, 4, 5, 6, 7, 8"},
+{"Term":"Natural Minor Scale","Definition":"1, 2,♭3, 4, 5,♭6,♭7, 8"},
+{"Term":"Harmonic Minor Scale","Definition":"1, 2,♭3, 4, 5,♭6,♮7, 8"},
+{"Term":"Melodic Minor Scale","Definition":"1, 2,♭3, 4, 5,♮6,♮7, 8 ↗︎ ♭7,♭6, 5, 4,♭3, 2, 1 ↘︎"},
 ];
 
 var unit1 = [
@@ -94,6 +102,14 @@ var unit2 = [
 {"Term":"Double Flat","Definition":"Lowers a natural pitch by two half steps"},
 {"Term":"Natural","Definition":"Returns a note to it’s natural state, canceling any accidentals"},
 {"Term":"Enharmonic","Definition":"An alternate spelling of a note (i.e. C#/Db)"},
+{"Term":"Key","Definition":"The scale used in a piece of music"},
+{"Term":"Key Signature","Definition":"The set of sharps and flats which determine the key"},
+{"Term":"Solfege","Definition":"Do, Re, Mi, etc."},
+{"Term":"Scale","Definition":"The notes of a given key, ascending and descending"},
+{"Term":"Major Scale","Definition":"1, 2, 3, 4, 5, 6, 7, 8"},
+{"Term":"Natural Minor Scale","Definition":"1, 2,♭3, 4, 5,♭6,♭7, 8"},
+{"Term":"Harmonic Minor Scale","Definition":"1, 2,♭3, 4, 5,♭6,♮7, 8"},
+{"Term":"Melodic Minor Scale","Definition":"1, 2,♭3, 4, 5,♮6,♮7, 8 ↗︎ ♭7,♭6, 5, 4,♭3, 2, 1 ↘︎"},
 ];
 
     function getVocab() {
