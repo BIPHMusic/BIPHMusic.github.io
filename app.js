@@ -53,6 +53,18 @@ var cumulative = [
 {"Term":"Natural Minor Scale","Definition":"1, 2,♭3, 4, 5,♭6,♭7, 8"},
 {"Term":"Harmonic Minor Scale","Definition":"1, 2,♭3, 4, 5,♭6,♮7, 8"},
 {"Term":"Melodic Minor Scale","Definition":"1, 2,♭3, 4, 5,♮6,♮7, 8 ↗︎ ♭7,♭6, 5, 4,♭3, 2, 1 ↘︎"},
+{"Term":"Relative Minor","Definition":"A minor scale that uses the same key signature as the major (C major, A minor)"},
+{"Term":"Parallel Minor","Definition":"A minor scale that shares the same tonic as the major (C major, C minor)"},
+{"Term":"Rhythm","Definition":"The way of organizing notes by length"},
+{"Term":"Measure","Definition":"The space between two vertical bar lines"},
+{"Term":"Time Signature","Definition":"A marking that describes the number of beats in a measure and how they are subdivided"},
+{"Term":"Meter","Definition":"Another way to say Time Signature"},
+{"Term":"Simple Meter","Definition":"Beat is divisible by groups of two"},
+{"Term":"Compound Meter","Definition":"Beat is divisible by groups of three"},
+{"Term":"Complex Meter","Definition":"Some beats are divisible by two, some by three"},
+{"Term":"Duple Pulse","Definition":"Time signature with two main beats"},
+{"Term":"Triple Pulse","Definition":"Time signature with three main beats"},
+{"Term":"Quadruple Pulse","Definition":"Time signature with four main beats"},
 ];
 
 var unit1 = [
@@ -110,6 +122,18 @@ var unit2 = [
 {"Term":"Natural Minor Scale","Definition":"1, 2,♭3, 4, 5,♭6,♭7, 8"},
 {"Term":"Harmonic Minor Scale","Definition":"1, 2,♭3, 4, 5,♭6,♮7, 8"},
 {"Term":"Melodic Minor Scale","Definition":"1, 2,♭3, 4, 5,♮6,♮7, 8 ↗︎ ♭7,♭6, 5, 4,♭3, 2, 1 ↘︎"},
+{"Term":"Relative Minor","Definition":"A minor scale that uses the same key signature as the major (C major, A minor)"},
+{"Term":"Parallel Minor","Definition":"A minor scale that shares the same tonic as the major (C major, C minor)"},
+{"Term":"Rhythm","Definition":"The way of organizing notes by length"},
+{"Term":"Measure","Definition":"The space between two vertical bar lines"},
+{"Term":"Time Signature","Definition":"A marking that describes the number of beats in a measure and how they are subdivided"},
+{"Term":"Meter","Definition":"Another way to say Time Signature"},
+{"Term":"Simple Meter","Definition":"Beat is divisible by groups of two"},
+{"Term":"Compound Meter","Definition":"Beat is divisible by groups of three"},
+{"Term":"Complex Meter","Definition":"Some beats are divisible by two, some by three"},
+{"Term":"Duple Pulse","Definition":"Time signature with two main beats"},
+{"Term":"Triple Pulse","Definition":"Time signature with three main beats"},
+{"Term":"Quadruple Pulse","Definition":"Time signature with four main beats"},
 ];
 
     function getVocab() {
