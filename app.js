@@ -65,6 +65,44 @@ var cumulative = [
 {"Term":"Duple Pulse","Definition":"Time signature with two main beats"},
 {"Term":"Triple Pulse","Definition":"Time signature with three main beats"},
 {"Term":"Quadruple Pulse","Definition":"Time signature with four main beats"},
+{"Term":"Downbeat","Definition":"The beginning/strongest part of the beat"},
+{"Term":"Upbeat","Definition":"The weaker subdivision(s) between the beats"},
+{"Term":"Tempo","Definition":"the speed of music"},
+{"Term":"BPM","Definition":"The number of beats per minute"},
+{"Term":"Larghissimo","Definition":"The slowest tempo marking <20 BPM"},
+{"Term":"Grave","Definition":"Very, very slow, 20-40 BPM"},
+{"Term":"Largo/Lento","Definition":"Very slow, 40-60 BPM"},
+{"Term":"Adagio","Definition":"Slowly, with expression, 60-75 BPM"},
+{"Term":"Andante","Definition":"Walking tempo, 75-90 BPM"},
+{"Term":"Moderato","Definition":"At a moderate speed, 100-120 BPM"},
+{"Term":"Allegro","Definition":"Fast, 120-140 BPM"},
+{"Term":"Vivace","Definition":"Lively and fast, 150-175 BPM"},
+{"Term":"Presto","Definition":"Very fast, 140-200 BPM"},
+{"Term":"Prestissimo","Definition":"Very, very fast! >200 BPM"},
+{"Term":"Anacrusis","Definition":"A pickup note that starts before the beginning of a phrase"},
+{"Term":"Syncopation","Definition":"The practice of accenting the upbeats of a phrase"},
+{"Term":"Ostinato","Definition":"A repeated musical phrase"},
+{"Term":"Dynamics","Definition":"Markings in music which determine how loudly/softly it is to be played"},
+{"Term":"Piano","Definition":"quiet"},
+{"Term":"Forte","Definition":"loud"},
+{"Term":"Mezzo Piano","Definition":"moderately quiet"},
+{"Term":"Mezzo Forte","Definition":"moderately loud"},
+{"Term":"Pianissimo","Definition":"very quiet"},
+{"Term":"Fortissimo","Definition":"very loud"},
+{"Term":"Piano Pianissimo","Definition":"The quietest marking you’ll see"},
+{"Term":"Forte Fortissimo","Definition":"The loudest marking you’ll see"},
+{"Term":"Crescendo","Definition":"Gradually growing in strength"},
+{"Term":"Decrescendo","Definition":"Gradually decreasing in strength"},
+{"Term":"Diminuendo","Definition":"Fading out slowly, also decreasing in speed"},
+{"Term":"Forte Piano","Definition":"a dynamic starting strong and immediately going to quiet"},
+{"Term":"Triad","Definition":"a three note chord: 1,3,5"},
+{"Term":"Major Triad","Definition":"1 M3 P5,   (1    3    5)"},
+{"Term":"Minor Triad","Definition":"1 m3 P5,   (1 ♭3    5)"},
+{"Term":"Diminished Triad","Definition":"1 m3 d5,   (1 ♭3 ♭5)"},
+{"Term":"Augmented Triad","Definition":"1 M3 A5,  (1    3   #5)"},
+{"Term":"Root","Definition":"The tonic (1) of a given chord"},
+{"Term":"Root Position","Definition":"The root of the chord is on the bottom"},
+{"Term":"Inversion","Definition":"A voicing of a chord where the root is not on bottom"},
 ];
 
 var unit1 = [
@@ -136,6 +174,47 @@ var unit2 = [
 {"Term":"Quadruple Pulse","Definition":"Time signature with four main beats"},
 ];
 
+var unit3 = [
+{"Term":"Downbeat","Definition":"The beginning/strongest part of the beat"},
+{"Term":"Upbeat","Definition":"The weaker subdivision(s) between the beats"},
+{"Term":"Tempo","Definition":"the speed of music"},
+{"Term":"BPM","Definition":"The number of beats per minute"},
+{"Term":"Larghissimo","Definition":"The slowest tempo marking <20 BPM"},
+{"Term":"Grave","Definition":"Very, very slow, 20-40 BPM"},
+{"Term":"Largo/Lento","Definition":"Very slow, 40-60 BPM"},
+{"Term":"Adagio","Definition":"Slowly, with expression, 60-75 BPM"},
+{"Term":"Andante","Definition":"Walking tempo, 75-90 BPM"},
+{"Term":"Moderato","Definition":"At a moderate speed, 100-120 BPM"},
+{"Term":"Allegro","Definition":"Fast, 120-140 BPM"},
+{"Term":"Vivace","Definition":"Lively and fast, 150-175 BPM"},
+{"Term":"Presto","Definition":"Very fast, 140-200 BPM"},
+{"Term":"Prestissimo","Definition":"Very, very fast! >200 BPM"},
+{"Term":"Anacrusis","Definition":"A pickup note that starts before the beginning of a phrase"},
+{"Term":"Syncopation","Definition":"The practice of accenting the upbeats of a phrase"},
+{"Term":"Ostinato","Definition":"A repeated musical phrase"},
+{"Term":"Dynamics","Definition":"Markings in music which determine how loudly/softly it is to be played"},
+{"Term":"Piano","Definition":"quiet"},
+{"Term":"Forte","Definition":"loud"},
+{"Term":"Mezzo Piano","Definition":"moderately quiet"},
+{"Term":"Mezzo Forte","Definition":"moderately loud"},
+{"Term":"Pianissimo","Definition":"very quiet"},
+{"Term":"Fortissimo","Definition":"very loud"},
+{"Term":"Piano Pianissimo","Definition":"The quietest marking you’ll see"},
+{"Term":"Forte Fortissimo","Definition":"The loudest marking you’ll see"},
+{"Term":"Crescendo","Definition":"Gradually growing in strength"},
+{"Term":"Decrescendo","Definition":"Gradually decreasing in strength"},
+{"Term":"Diminuendo","Definition":"Fading out slowly, also decreasing in speed"},
+{"Term":"Forte Piano","Definition":"a dynamic starting strong and immediately going to quiet"},
+{"Term":"Triad","Definition":"a three note chord: 1,3,5"},
+{"Term":"Major Triad","Definition":"1 M3 P5,   (1    3    5)"},
+{"Term":"Minor Triad","Definition":"1 m3 P5,   (1 ♭3    5)"},
+{"Term":"Diminished Triad","Definition":"1 m3 d5,   (1 ♭3 ♭5)"},
+{"Term":"Augmented Triad","Definition":"1 M3 A5,  (1    3   #5)"},
+{"Term":"Root","Definition":"The tonic (1) of a given chord"},
+{"Term":"Root Position","Definition":"The root of the chord is on the bottom"},
+{"Term":"Inversion","Definition":"A voicing of a chord where the root is not on bottom"},
+]
+
     function getVocab() {
         let vocabSelect = document.querySelector('select');
         if (vocabSelect.value == 'Unit1') {
@@ -143,6 +222,9 @@ var unit2 = [
             getRandomWord()
         } else if (vocabSelect.value == 'Unit2') {
             vocab = unit2;
+            getRandomWord()
+        } else if (vocabSelect.value == 'Unit3') {
+            vocab = unit3;
             getRandomWord()
         } else if (vocabSelect.value == 'Cumulative') {
             vocab = cumulative;
