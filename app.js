@@ -103,6 +103,14 @@ var cumulative = [
 {"Term":"Root","Definition":"The tonic (1) of a given chord"},
 {"Term":"Root Position","Definition":"The root of the chord is on the bottom"},
 {"Term":"Inversion","Definition":"A voicing of a chord where the root is not on bottom"},
+{"Term":"First Inversion","Definition":"A chord with the 3rd on the bottom, abbr. 6"},
+{"Term":"Second Inversion","Definition":"A chord with the 5th on the bottom, abbr. 64"},
+{"Term":"Seventh Chord","Definition":"a four note chord: 1,3,5,7"},
+{"Term":"Major 7","Definition":"1 M3 P5 M7"},
+{"Term":"Dominant 7","Definition":"1 M3 P5 m7"},
+{"Term":"Minor 7","Definition":"1 m3 P5 m7"},
+{"Term":"Half-Diminished 7","Definition":"1 m3 d5 m7"},
+{"Term":"Diminished 7","Definition":"1 m3 d5 d7"},
 ];
 
 var unit1 = [
@@ -213,6 +221,14 @@ var unit3 = [
 {"Term":"Root","Definition":"The tonic (1) of a given chord"},
 {"Term":"Root Position","Definition":"The root of the chord is on the bottom"},
 {"Term":"Inversion","Definition":"A voicing of a chord where the root is not on bottom"},
+{"Term":"First Inversion","Definition":"A chord with the 3rd on the bottom, abbr. 6"},
+{"Term":"Second Inversion","Definition":"A chord with the 5th on the bottom, abbr. 64"},
+{"Term":"Seventh Chord","Definition":"a four note chord: 1,3,5,7"},
+{"Term":"Major 7","Definition":"1 M3 P5 M7"},
+{"Term":"Dominant 7","Definition":"1 M3 P5 m7"},
+{"Term":"Minor 7","Definition":"1 m3 P5 m7"},
+{"Term":"Half-Diminished 7","Definition":"1 m3 d5 m7"},
+{"Term":"Diminished 7","Definition":"1 m3 d5 d7"},
 ]
 
     function getVocab() {
